@@ -1,10 +1,10 @@
 package Week_01;
 
 
-public class ClimbStairs {
+public class ClimbStairs01 {
 
     public static void main(String[] args) {
-        System.out.println(climbStairs(47));
+        System.out.println(climbStairs2(47));
     }
 
     public static int climbStairs(int n) {
@@ -20,5 +20,17 @@ public class ClimbStairs {
             second = temp;
         }
         return temp;
+    }
+
+    public static int climbStairs2(int n) {
+        int first = 2, second = 3;
+        if (n <= 3) {
+            return n;
+        }
+        for (int i = 4; i <= n; i++) {
+            second +=  first;
+            first = second - first;
+        }
+        return second;
     }
 }
