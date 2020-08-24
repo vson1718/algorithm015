@@ -21,8 +21,8 @@ f（1）=1，f（2）=2，f（3）=3
             return n;
         }
         for (int i = 4; i <= n; i++) {
-            second +=  first;//
-            first = second - first;//
+            second +=  first;//求的第四次数据 f(n)=f(n-1)+f(n-2)
+            first = second - first;//求的 f(n-1)的数据
         }
         return second;
     }
