@@ -14,7 +14,7 @@ f（1）=1，f（2）=2，f（3）=3
 可得f(n)=f(n-1)+f(n-2)
 
 由于1，2，3结果已给出即
-～～～
+~~~
   public static int climbStairs2(int n) {
         int first = 2, second = 3;
         if (n <= 3) {
@@ -26,7 +26,7 @@ f（1）=1，f（2）=2，f（3）=3
         }
         return second;
     }
- ～～～
+~~~
 
 
 
