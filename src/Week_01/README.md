@@ -50,6 +50,14 @@ https://leetcode-cn.com/problems/plus-one/submissions/
 ~~~
 
 
+#####   两数之和
+https://leetcode-cn.com/problems/two-sum/
+
+
+
+
+#####  两两交换链表中的节点
+https://leetcode-cn.com/problems/swap-nodes-in-pairs/
 
 
 
