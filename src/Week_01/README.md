@@ -1,6 +1,8 @@
 ####学习总结
+
 #####爬楼梯问题
 https://leetcode-cn.com/problems/climbing-stairs/
+
 ######解题思路
 1. 爬楼梯问题总结为斐波拉契数列问题
 2. 即 f(n)=f(n-1)+f(n-2)
@@ -51,6 +53,7 @@ ___
 
 #####   两数之和
 https://leetcode-cn.com/problems/two-sum/
+
 ######解题思路
 + 暴力解法
     + 两个for循环，判断数组两数之和满足目标值target即可
@@ -83,6 +86,7 @@ https://leetcode-cn.com/problems/two-sum/
 ___
 #####  两两交换链表中的节点
 https://leetcode-cn.com/problems/swap-nodes-in-pairs/
+
 ######解题思路
 + 递归解法
     + 两个出口：当head或head.next为null,则返回head，以及交换之后的ListNode
@@ -127,11 +131,10 @@ https://leetcode-cn.com/problems/swap-nodes-in-pairs/
         return dump.next;
     }
 ~~~
-
-
-
+———
 #####  合并两个有序链表
 https://leetcode-cn.com/problems/merge-two-sorted-lists/
+
 ######解题思路
    >简单理解就是，拿新的节点去将两个链表按照升序链接起来
 + for循环遍历
