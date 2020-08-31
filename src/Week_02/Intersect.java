@@ -1,17 +1,26 @@
-##### 两个数组的交集 II
-https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
+package Week_02;
 
-1.解题思路
-+ 将一个数组小的进行Hash存储在HashMap中，
-    + 将nums1[index]的值为key,出现的次数为value
-    + 这样就可以对数组的数据去重复，并统计个数
-+ 遍历nums2，在nums2中查找HashMap的中的key即可
-~~~
-  public static int[] intersect(int[] nums1, int[] nums2) {
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Stack;
+
+public class Intersect {
+
+    public static void main(String[] args) {
+        int[] nums1 = new int[]{1, 2, 2, 1};
+        int[] nums2 = new int[]{1, 2};
+        int[] num = intersect(nums1, nums2);
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] + ",");
+        }
+    }
+
+    public static int[] intersect(int[] nums1, int[] nums2) {
         if (nums1.length > nums2.length) {
             return intersect(nums2, nums1);
         }
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        HashMap<Integer, Integer> hashMap = new HashMap<>(nums1.length);
         for (int i = 0; i < nums1.length; i++) {
             hashMap.put(nums1[i], hashMap.getOrDefault(nums1[i], 0) + 1);
         }
@@ -28,6 +37,4 @@ https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
         }
         return Arrays.copyOfRange(intersection,0,index);
     }
-~~~
-
-
+}
