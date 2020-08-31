@@ -11,7 +11,7 @@ https://leetcode-cn.com/problems/climbing-stairs/
 5. 推导出f（4）=5，f（5）=8
 6. 可得f(n)=f(n-1)+f(n-2)
 7. 由于1，2，3结果已给出即
-~~~
+~~~ java
   public static int climbStairs2(int n) {
         int first = 2, second = 3;
         if (n <= 3) {
@@ -36,7 +36,7 @@ https://leetcode-cn.com/problems/plus-one/submissions/
 + 当然还要满足99999999的可能，就是当for正常遍历之后（if条件不满足）
 + 则要扩充数组，new int[digits.length+1]，首位给1即可
 
-~~~
+~~~ java
   public static int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i > 0; --i) {
             digits[i] = (digits[i] + 1) % 10;
@@ -57,7 +57,7 @@ https://leetcode-cn.com/problems/two-sum/
 ######解题思路
 + 暴力解法
     + 两个for循环，判断数组两数之和满足目标值target即可
- ~~~
+ ~~~ java
   public static int[] twoSum(int[] nums, int target) {
             for (int i = 0; i < nums.length - 1; i++) {
                 for (int j = i + 1; j < nums.length; j++) {
@@ -73,7 +73,7 @@ https://leetcode-cn.com/problems/two-sum/
     1. 将（target-num[i]）作为key，i作为value存储
     2. 使用HashMap.containsKey去寻找（target-num[i]）的key
     3. 如果寻找到即HashMap.get(（target-num[i]）)与i为target相加的和的下标
-~~~
+~~~ java
  for (int i = 0; i < nums.length; i++) {
             if (!hashMap.containsKey(nums[i])) {
                 hashMap.put(target - nums[i], i);
@@ -94,7 +94,7 @@ https://leetcode-cn.com/problems/swap-nodes-in-pairs/
       + 把head的next指向下一个交换的结果
       + 再把curNode指向head
     + 清空数据：无
-~~~
+~~~ java
  public static ListNode swapPairs(ListNode head) {
         if (head==null||head.next==null){
             return head;
@@ -110,7 +110,7 @@ https://leetcode-cn.com/problems/swap-nodes-in-pairs/
     2. while将first节点和second节点取出，并交互
     3. 交换后，将重新赋值preNode，head，向下遍历
     4. 返回dump.next(新链表的head)
-~~~
+~~~ java
    public static ListNode swapPairs3(ListNode head) {
         //给定 1->2->3->4, 你应该返回 2->1->4->3.
         ListNode dump = new ListNode(-1);
