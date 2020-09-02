@@ -172,6 +172,7 @@ ___
 ~~~
 ———
 ### [https://leetcode-cn.com/problems/merge-two-sorted-lists/][合并两个有序链表]
+### [合并两个有序链表][https://leetcode-cn.com/problems/merge-two-sorted-lists/]
 
 ###解题思路
    >简单理解就是，拿新的节点去将两个链表按照升序链接起来
