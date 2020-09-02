@@ -1,7 +1,7 @@
-##### 两个数组的交集 II
-https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
 
-1.解题思路
+[https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/][两个数组的交集 II]
+
+###解题思路
 + 将一个数组小的进行Hash存储在HashMap中，
     + 将nums1[index]的值为key,出现的次数为value
     + 这样就可以对数组的数据去重复，并统计个数
@@ -30,4 +30,9 @@ https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
     }
 ~~~
 
+ 
+[https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/][滑动窗口的最大值]
+
+
+[https://leetcode-cn.com/problems/remove-outermost-parentheses/submissions/][删除最外层的括号]
 
