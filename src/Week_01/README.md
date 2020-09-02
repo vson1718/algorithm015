@@ -1,9 +1,52 @@
-####学习总结
+# 学习方法总结
+个人理解就是先要模仿学会，然后再进行理解，最终形成自己的套路。
+  
+一开始不会很正常，不需要被打击，重点是要踏出舒适区，不断学会新的思路，拓宽知识的广度，并注意把知识串联，不要长时间形成孤岛。
+  
+弱项一定要加强，至少要形成肌肉记忆。
 
-#####爬楼梯问题
-https://leetcode-cn.com/problems/climbing-stairs/
+### 摒弃旧习惯
+1、不死磕（传统错误方式）  
+2、五毒神掌（敢于放手，死记硬背）  
+3、积极看优质题解（国际版和国内版，学习优秀的解法，学会套路，形成自己的套路）  
+4、踏出舒适区，强化弱项  
 
-######解题思路
+### 反馈
+1、主动反馈（自己看优质题解，类比看高手视角打游戏）  
+2、被动反馈（高手给意见，做作业助教code review）
+
+### 切题四件套
+1、Clarification  确保题意理解正确  
+2、Possible Solutions  想所有可能解法  
+　　Compare  比较其时空复杂度  
+　　Optimal	加强  
+3、Coding  
+4、Test Case  
+
+### 五毒神掌（五遍刷题法）
+1、第一遍  
+　　5-10分钟：读题 + 思考  
+　　没有思路直接看题解，看各种思路并比较优劣  
+　　背诵、默写好的解法
+  
+2、第二遍  
+　　马上自己写，直到提交通过  
+　　多种写法都要写，体会其中思路  
+
+3、第三遍  
+　　24小时后再做  
+　　不同解法的熟练程度进行专项训练  
+
+4、第四遍  
+　　一周后回来练习，专项练习  
+　　效果：对某一类的解法已经很熟练  
+
+5、第五遍  
+　　面试前一周恢复性训练，不一定固定，看情况安排  
+
+###[https://leetcode-cn.com/problems/climbing-stairs/][爬楼梯问题]
+
+###解题思路
 1. 爬楼梯问题总结为斐波拉契数列问题
 2. 即 f(n)=f(n-1)+f(n-2)
 3. 边界已经给出 
@@ -26,10 +69,9 @@ https://leetcode-cn.com/problems/climbing-stairs/
 ~~~
 ___
 
-##### 加一 问题
-https://leetcode-cn.com/problems/plus-one/submissions/
+###[https://leetcode-cn.com/problems/plus-one/submissions/][加一 问题]
 
-######解题思路
+###解题思路
 + 利用遍历数组，在数组的末尾+1，判定末尾+1之后是否满足10进一
 + 若进一：数组的高位+1（高位只能进一）
 + 若不进一：直接返回数组即可
@@ -51,10 +93,8 @@ https://leetcode-cn.com/problems/plus-one/submissions/
 ~~~
 ___
 
-#####   两数之和
-https://leetcode-cn.com/problems/two-sum/
-
-######解题思路
+### [https://leetcode-cn.com/problems/two-sum/][两数之和]
+###解题思路
 + 暴力解法
     + 两个for循环，判断数组两数之和满足目标值target即可
  ~~~ java
@@ -84,10 +124,9 @@ https://leetcode-cn.com/problems/two-sum/
  return new int[]{};
 ~~~
 ___
-#####  两两交换链表中的节点
-https://leetcode-cn.com/problems/swap-nodes-in-pairs/
+###[https://leetcode-cn.com/problems/swap-nodes-in-pairs/][两两交换链表中的节点]
 
-######解题思路
+###解题思路
 + 递归解法
     + 两个出口：当head或head.next为null,则返回head，以及交换之后的ListNode
     + 最小重复子问题： 两两交互 
@@ -132,10 +171,9 @@ https://leetcode-cn.com/problems/swap-nodes-in-pairs/
     }
 ~~~
 ———
-#####  合并两个有序链表
-https://leetcode-cn.com/problems/merge-two-sorted-lists/
+### [https://leetcode-cn.com/problems/merge-two-sorted-lists/][合并两个有序链表]
 
-######解题思路
+###解题思路
    >简单理解就是，拿新的节点去将两个链表按照升序链接起来
 + for循环遍历
   1. 首先初始化一个头指针headNode指向链表的head
@@ -183,4 +221,3 @@ https://leetcode-cn.com/problems/merge-two-sorted-lists/
         }
     }
 ~~~
-
