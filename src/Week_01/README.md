@@ -44,9 +44,9 @@
 5、第五遍  
 　　面试前一周恢复性训练，不一定固定，看情况安排  
 
-###[https://leetcode-cn.com/problems/climbing-stairs/][爬楼梯问题]
+### [https://leetcode-cn.com/problems/climbing-stairs/][爬楼梯问题]
 
-###解题思路
+### 解题思路
 1. 爬楼梯问题总结为斐波拉契数列问题
 2. 即 f(n)=f(n-1)+f(n-2)
 3. 边界已经给出 
@@ -69,9 +69,9 @@
 ~~~
 ___
 
-###[https://leetcode-cn.com/problems/plus-one/submissions/][加一 问题]
+### [https://leetcode-cn.com/problems/plus-one/submissions/][加一 问题]
 
-###解题思路
+### 解题思路
 + 利用遍历数组，在数组的末尾+1，判定末尾+1之后是否满足10进一
 + 若进一：数组的高位+1（高位只能进一）
 + 若不进一：直接返回数组即可
@@ -94,7 +94,7 @@ ___
 ___
 
 ### [https://leetcode-cn.com/problems/two-sum/][两数之和]
-###解题思路
+### 解题思路
 + 暴力解法
     + 两个for循环，判断数组两数之和满足目标值target即可
  ~~~ java
@@ -126,7 +126,7 @@ ___
 ___
 ###[https://leetcode-cn.com/problems/swap-nodes-in-pairs/][两两交换链表中的节点]
 
-###解题思路
+### 解题思路
 + 递归解法
     + 两个出口：当head或head.next为null,则返回head，以及交换之后的ListNode
     + 最小重复子问题： 两两交互 
@@ -171,8 +171,7 @@ ___
     }
 ~~~
 ———
-### [https://leetcode-cn.com/problems/merge-two-sorted-lists/][合并两个有序链表]
-### [合并两个有序链表][https://leetcode-cn.com/problems/merge-two-sorted-lists/]
+###  [https://leetcode-cn.com/problems/merge-two-sorted-lists/][合并两个有序链表]
 
 ### 解题思路
    >简单理解就是，拿新的节点去将两个链表按照升序链接起来
