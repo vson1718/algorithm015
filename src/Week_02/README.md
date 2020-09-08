@@ -36,3 +36,6 @@
 
 [https://leetcode-cn.com/problems/remove-outermost-parentheses/submissions/][删除最外层的括号]
 
+
+
+[https://leetcode-cn.com/problems/fizz-buzz/solution/fizz-buzz-by-leetcode/][Fizz Buzz]
