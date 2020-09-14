@@ -40,7 +40,7 @@ public class CombinationSum {
     public static void main(String[] a) {
         int[] num = new int[]{2, 3, 6, 7};
         int target = 7;
-        combinationSum(num, target);
+       System.out.println(combinationSum(num, target));
     }
 
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -55,7 +55,7 @@ public class CombinationSum {
             return;
         }
         if (target == 0) {
-            ans.add(combine);
+            ans.add(new ArrayList<>(combine));
             return;
         }
         //直接跳过

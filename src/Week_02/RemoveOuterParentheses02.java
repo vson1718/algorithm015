@@ -37,7 +37,7 @@ package Week_02;
  * 链接：https://leetcode-cn.com/problems/remove-outermost-parentheses
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class RemoveOuterParentheses {
+public class RemoveOuterParentheses02 {
 
     public static void main(String[] args) {
         //输入："( ()() ) ( () ) ( ()(()) )"
@@ -48,24 +48,25 @@ public class RemoveOuterParentheses {
         System.out.println(removeOuterParentheses(str));
     }
 
-
-    public static String removeOuterParentheses(String S) {
-        int count = 0;
-        StringBuffer stringBuffer = new StringBuffer();
-        for (int i = 0; i < S.length(); i++) {
-            char c = S.charAt(i);
-            if ('(' == c) {
-                if (count > 0) {
-                    stringBuffer.append(c);
+    public static String removeOuterParentheses(String s) {
+        StringBuilder stringBuilder=new StringBuilder();
+        int index=0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                if (0!=index){
+                    stringBuilder.append(c);
                 }
-                count++;
-            } else if (')' == c) {
-                count--;
-                if (count > 0) {
-                    stringBuffer.append(c);
+                index++;
+            }else if (c==')'){
+                index--;
+                if (0!=index){
+                    stringBuilder.append(c);
                 }
             }
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
+
+
 }
